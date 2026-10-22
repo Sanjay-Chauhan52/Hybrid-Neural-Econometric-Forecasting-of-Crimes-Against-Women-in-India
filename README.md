@@ -12,7 +12,7 @@ The platform bridges the gap between econometric time-series models and deep rec
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 - [Executive Overview](#-executive-overview)
 - [Project Objectives](#-project-objectives)
 - [System Architecture](#-system-architecture)
@@ -28,7 +28,7 @@ The platform bridges the gap between econometric time-series models and deep rec
 
 ---
 
-## 📖 Executive Overview
+##  Executive Overview
 
 Analyzing crime against women in India presents three major challenges:
 1. **Severe Category Scale Differences:** Annual domestic violence cases reach hundreds of thousands, while dowry deaths or human trafficking counts may be dozens to hundreds per state. Simple arithmetic aggregation causes low-volume, high-severity crimes to be overshadowed.
@@ -41,7 +41,7 @@ Analyzing crime against women in India presents three major challenges:
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 1. **Standardized Panel Preprocessing:** Curate and validate 736 State–Year observations from the National Crime Records Bureau (NCRB) across 36 States/UTs.
 2. **Multi-Signal Risk Indexing:** Move beyond raw counts to an un-dominated 0–100 Crime Risk Index (CRI) with risk tertile classifications (*Low, Medium, High*).
@@ -51,7 +51,7 @@ Analyzing crime against women in India presents three major challenges:
 
 ---
 
-## 🏗 System Architecture
+##  System Architecture
 
 ```text
                                +------------------------------------------+
@@ -101,7 +101,7 @@ Analyzing crime against women in India presents three major challenges:
 
 ---
 
-## 🔬 Core Analytical Modules
+##  Core Analytical Modules
 
 ### 1. Tri-Signal PCA Crime Risk Index (CRI)
 
@@ -172,7 +172,7 @@ $$
 
 ---
 
-## 📊 Empirical Backtest Results
+##  Empirical Backtest Results
 
 ### National Multi-Horizon Backtest Performance (Clean States)
 
@@ -192,7 +192,7 @@ $$
 
 ---
 
-## 📁 Dataset Description
+##  Dataset Description
 
 * **Source:** National Crime Records Bureau (NCRB), Ministry of Home Affairs, Government of India.
 * **Panel Dimensions:** 736 State–Year records across 36 States & Union Territories.
@@ -209,7 +209,7 @@ $$
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 ├── backend/
@@ -239,7 +239,7 @@ $$
 
 ---
 
-## 🚀 Installation and Setup Guide
+##  Installation and Setup Guide
 
 ### 1. Prerequisites
 * Python 3.10, 3.11, or 3.12
@@ -279,7 +279,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 | Endpoint | Method | Parameters | Description |
 | :--- | :---: | :--- | :--- |
@@ -293,7 +293,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📚 References
+##  References
 
 1. **Dwivedi, N., & Sachdeva, S.** (2019). Gender-based violence in New Delhi, India: Forecast based on secondary data analysis. *Eastern Mediterranean Health Journal*, 25(4), 262–268.
 2. **Bhardwaj, G., & Bawa, R. K.** (2022). Assaying the Statistics of Crime Against Women in India using Provenance and Machine Learning Models. *International Journal of Advanced Computer Science and Applications (IJACSA)*, 13(7), 492–501.
