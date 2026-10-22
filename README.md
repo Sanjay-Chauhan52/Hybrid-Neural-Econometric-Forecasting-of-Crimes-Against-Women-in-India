@@ -142,6 +142,8 @@ $$\hat{C}_{\text{growth}, Y_0+h} = \hat{C}_{\text{growth}, Y_0+h-1} \cdot (1 + g
 
 #### Model 3: Adaptive Inverse-Backtest-Error Ensemble
 Blends deep learning representation with econometric baseline stability using inverse holdout backtest error weights:
+
+
 $$
 w_{\text{lstm}}(h) =
 \frac{\frac{1}{\text{MAE}{\text{lstm}}(h)}}
