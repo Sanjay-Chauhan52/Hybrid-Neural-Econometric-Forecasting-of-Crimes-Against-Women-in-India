@@ -1,0 +1,31 @@
+{
+  "feature_cols": [
+    "Rape",
+    "K&A",
+    "DD",
+    "AoW",
+    "AoM",
+    "DV",
+    "WT"
+  ],
+  "pca_mean": [
+    51.42663043478261,
+    51.42663043478261,
+    51.42663043478261
+  ],
+  "pca_std": [
+    25.242344563554763,
+    28.855688740287825,
+    28.85568874028782
+  ],
+  "pca_pc1": [
+    0.4912229624105909,
+    0.5868571610757369,
+    0.6436603713874965
+  ],
+  "explained_variance_ratio": 0.677678994956385,
+  "correlation_with_heuristic": 0.7004083251990499,
+  "correlation_with_anomaly_signal": 0.8367679705016643,
+  "correlation_with_statistical_signal": 0.9177606040812286,
+  "autoencoder_val_mse": 0.0047551486641168594
+}
