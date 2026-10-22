@@ -159,6 +159,8 @@ $$
 
 The final ensemble forecast is computed as:
 
+
+
 $$
 \hat{C}{\text{ens},Y_0+h} =
 w{\text{lstm}}(h)\hat{C}{\text{lstm},Y_0+h}
