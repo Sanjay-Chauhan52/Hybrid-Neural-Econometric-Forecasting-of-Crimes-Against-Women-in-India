@@ -131,6 +131,7 @@ The platform provides three competitive forecasting approaches:
 
 #### Model 1: Econometric Damped Growth (Baseline)
 Uses a recent 3-observation baseline $B_0 = \frac{1}{3}\sum_{i=0}^2 C_{Y_0-i}$ and compounds mean historical YoY growth $g$, dampened exponentially across forecast horizon $h$ by parameter $d \in [0.05, 0.95]$ selected via rolling backtests:
+
 $$g_h^* = \text{clip}(g \cdot d^{h-1},\; -0.75,\; 0.75)$$
 $$\hat{C}_{\text{growth}, Y_0+h} = \hat{C}_{\text{growth}, Y_0+h-1} \cdot (1 + g_h^*)$$
 
