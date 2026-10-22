@@ -142,9 +142,27 @@ $$\hat{C}_{\text{growth}, Y_0+h} = \hat{C}_{\text{growth}, Y_0+h-1} \cdot (1 + g
 
 #### Model 3: Adaptive Inverse-Backtest-Error Ensemble
 Blends deep learning representation with econometric baseline stability using inverse holdout backtest error weights:
-$$w_{\text{lstm}}(h) = \frac{\frac{1}{\text{MAE}_{\text{lstm}}(h)}}{\frac{1}{\text{MAE}_{\text{lstm}}(h)} + \frac{1}{\text{MAE}_{\text{growth}}(h)}}, \quad w_{\text{growth}}(h) = 1 - w_{\text{lstm}}(h)$$
-$$\hat{C}_{\text{ens}, Y_0+h} = w_{\text{lstm}}(h)\hat{C}_{\text{lstm}, Y_0+h} + w_{\text{growth}}(h)\hat{C}_{\text{growth}, Y_0+h}$$
+$$
+w_{\text{lstm}}(h) =
+\frac{\frac{1}{\text{MAE}{\text{lstm}}(h)}}
+{\frac{1}{\text{MAE}{\text{lstm}}(h)} +
+\frac{1}{\text{MAE}_{\text{growth}}(h)}}
+$$
 
+The growth-model weight is:
+
+$$
+w_{\text{growth}}(h) = 1 - w_{\text{lstm}}(h)
+$$
+
+The final ensemble forecast is computed as:
+
+$$
+\hat{C}{\text{ens},Y_0+h} =
+w{\text{lstm}}(h)\hat{C}{\text{lstm},Y_0+h}
++
+w{\text{growth}}(h)\hat{C}_{\text{growth},Y_0+h}
+$$
 ---
 
 ## 📊 Empirical Backtest Results
